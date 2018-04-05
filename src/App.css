@@ -8,17 +8,27 @@
   justify-content: flex-end;
 
 }
-.heaeder-listItem {
+.header-listItem {
   margin: 1rem;
-  border-bottom: 1px solid #bab3ad;
+  /*border-bottom: 3px solid #bab3ad;*/
   color: #bab3ad;
 
 }
 
-.heaeder-listItem a {
+.header-listItem a {
   font-size: inherit;
   color: inherit;
   text-decoration: none;
+}
+.header-listItem a:hover {
+  border-bottom: 3px solid #bab3ad;
+}
+.header-listItem a:active {
+  border-bottom: 3px solid #bab3ad;
+}
+
+.active {
+  border-bottom: 3px solid #bab3ad;
 }
 
 .home {
@@ -51,9 +61,26 @@
 }
 
 
-.contact {}
+.contact {
+  margin-top: 10rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .contact-list {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
+  width: 80%;
+  height: 50%;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.contact-listItem {
+  width: 30%;
+  display: flex;
+  justify-content: center;
 }
