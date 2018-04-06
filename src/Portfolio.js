@@ -1,11 +1,19 @@
 import React from 'react';
+import Card from './Card';
 
-const Portfolio = () => (
-  <section className="portfolio" id="portfolio">
-    <div className="lodges"></div>
-    <div className="ether"></div>
-    <div className="emaily"></div>
-  </section>
-)
+
+
+const Portfolio = () => {
+  const github ="https://github.com/Bojan17/Bojan17.github.io/blob/master/sass/components/_button.scss";
+  const link="https://github.com/Bojan17/Bojan17.github.io/blob/master/sass/components/_button.scss";
+
+  return (
+    <section className="portfolio" id="portfolio">
+      <Card github={github} link={link} />
+      <Card github={github} link={link} />
+      <Card github={github} link={link} />
+    </section>
+  );
+}
 
 export default Portfolio;

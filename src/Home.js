@@ -4,8 +4,24 @@ import React from 'react';
   <div>
 
     <section className="home" id="home">
-      <h2 className="name--1">Bojan</h2>
-      <h2 className="name--2">Kovacevic</h2>
+      <div className="name name--1">
+        <span>B</span>
+        <span>O</span>
+        <span>J</span>
+        <span>A</span>
+        <span>N</span>
+      </div>
+      <div className="name name--2">
+        <span>K</span>
+        <span>O</span>
+        <span>V</span>
+        <span>A</span>
+        <span>C</span>
+        <span>E</span>
+        <span>V</span>
+        <span>I</span>
+        <span>C</span>
+      </div>
     </section>
   </div>
 );
