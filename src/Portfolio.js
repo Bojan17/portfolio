@@ -1,19 +1,11 @@
 import React from 'react';
 import Card from './Card';
 
-
-
-const Portfolio = () => {
-  const github ="https://github.com/Bojan17/Bojan17.github.io/blob/master/sass/components/_button.scss";
-  const link="https://github.com/Bojan17/Bojan17.github.io/blob/master/sass/components/_button.scss";
-
-  return (
-    <section className="portfolio" id="portfolio">
-      <Card github={github} link={link} />
-      <Card github={github} link={link} />
-      <Card github={github} link={link} />
-    </section>
-  );
-}
-
+const Portfolio = () => (
+       <section className="portfolio" id="portfolio">
+         <Card github='https://github.com/Bojan17/Lodges-Cabins' link='https://aklodges.herokuapp.com/' name='Ak Lodges' />
+         <Card github='https://github.com/Bojan17/Campaign' link='https://kickstart-hcyqgpcyqj.now.sh/' name='Smart campaign' />
+         <Card github="#" link='http://gentle-journey-64447.herokuapp.com/' name='Emaily' />
+       </section>
+)
 export default Portfolio;

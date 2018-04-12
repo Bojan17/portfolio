@@ -19,6 +19,7 @@
   font-size: inherit;
   color: inherit;
   text-decoration: none;
+  z-index: 1000;
 }
 .header-listItem a:hover {
   border-bottom: 3px solid #bab3ad;
@@ -26,30 +27,61 @@
 .header-listItem a:active {
   border-bottom: 3px solid #bab3ad;
 }
-
 .active {
   border-bottom: 3px solid #bab3ad;
 }
 
+/* Switch animation*/
+.switch-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+
+}
+
+
+
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
 .home {
   margin-top: 5rem;
-  width: 60%;
+  margin-left: 1rem;
+  width: 100%;
   height: 80%;
 }
 
 .name {
   font-family: Kanit, sans-serif;
-  displa: flex;
+  display: flex;
   flex-direction: row;
-  justify-content: flex-start;
 }
 
 .name span {
-  margin-right: 2rem;
-  transition: all .2s;
+  padding-right: 2rem;
+  transition: all .2s cubic-bezier(.15,.87,.78,.26);
+  overflow: auto;
+  font-weight: 600;
+  /*display: flex;
+  flex-direction: row;
+  justify-content: flex-start; */
 }
-.name span:hover {
-  font-size: 10.5rem;
+
+.name--1 {
+  margin-bottom: .6rem;
 }
 
 .name--1, .name--2 {
@@ -59,11 +91,31 @@
   color: transparent;
 }
 
+.skills {
+  margin-top: 30rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skillsItems {
+  font-family: Kanit, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  background-color: #bab3ad;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  color: #000;
+}
+
 .about {
   margin: 3rem 0 3rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color:#e2e2e2
 }
 
 .about-figurecaption {
@@ -85,37 +137,67 @@
 }
 
   .card {
+    background-color: white; /*#e2e2e2;*/
+    /*opacity: 0.5;*/
+    font-size: 1.4rem;
+    font-weight: 400;
     width: 20rem;
     height: 25rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border: 1px solid #d3cdcd;
     box-shadow: 0 2rem 3rem rgba(117, 116, 116, .3);
   }
+  .github-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+
+  }
 
 
 .contact {
-  margin-top: 10rem;
-  height: 15rem;
+  margin-top: 30rem;
+  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .contact-list {
+  position: absolute;
+  top: 50%;
   list-style-type: none;
   display: flex;
-  flex-direction: row;
   width: 80%;
-  height: 50%;
-  justify-content: space-around;
-  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contact-listItem {
-  width: 30%;
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+
+
+
+
+.demo7 {
+  background-color: #1B1B1B;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.demo7-ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 99px;
+  position: absolute;
+  border: 1px solid lightblue;
 }
