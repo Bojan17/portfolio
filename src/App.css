@@ -31,6 +31,7 @@
   border-bottom: 3px solid #bab3ad;
 }
 
+
 /* Switch animation*/
 .switch-wrapper {
   position: relative;
@@ -55,7 +56,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
+
 }
 .home {
   margin-top: 5rem;
@@ -66,18 +67,6 @@
 
 .name {
   font-family: Kanit, sans-serif;
-  display: flex;
-  flex-direction: row;
-}
-
-.name span {
-  padding-right: 2rem;
-  transition: all .2s cubic-bezier(.15,.87,.78,.26);
-  overflow: auto;
-  font-weight: 600;
-  /*display: flex;
-  flex-direction: row;
-  justify-content: flex-start; */
 }
 
 .name--1 {
@@ -85,11 +74,20 @@
 }
 
 .name--1, .name--2 {
-  font-size: 10rem;
-  background-image: linear-gradient(to right bottom, #f2b580,#ef770e );
+  font-size: 8rem;
+  letter-spacing: 1rem;
+  background-image: linear-gradient(to right bottom, #f4bc8b,#ef770e );
   -webkit-background-clip: text;
   color: transparent;
 }
+
+.zagrada {
+  font-size: 2rem;
+  font-family: Kanit, sans-serif;
+  font-weight: 300;
+  color: #bab3ad;
+}
+
 
 .skills {
   margin-top: 30rem;
@@ -110,6 +108,7 @@
   color: #000;
 }
 
+
 .about {
   margin: 3rem 0 3rem 0;
   display: flex;
@@ -128,6 +127,7 @@
   font-size: 3rem;
 }
 
+
 .portfolio {
   margin-top: 20rem;
   display: flex;
@@ -137,18 +137,18 @@
 }
 
   .card {
-    background-color: white; /*#e2e2e2;*/
+    background-image: radial-gradient(circle at center, white, #afafae);
     /*opacity: 0.5;*/
     font-size: 1.4rem;
     font-weight: 400;
-    width: 20rem;
-    height: 25rem;
+    width: 13vw;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     border: 1px solid #d3cdcd;
-    box-shadow: 0 2rem 3rem rgba(117, 116, 116, .3);
+    box-shadow: 0 2rem 3rem rgba(117, 116, 116, .2);
   }
   .github-wrapper {
     display: flex;
@@ -201,3 +201,109 @@
   position: absolute;
   border: 1px solid lightblue;
 }
+
+
+  @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+      .switch-wrapper {
+        position: relative;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .header-list {
+        width: 100vw;
+        font-size: 1.2rem;
+        justify-content: space-between;
+      }
+      .home-wrapper {
+        width: 100vw;
+      }
+      .home {
+        margin-top: 2rem;
+        margin-left: 2px;
+        width: 100vw;
+        height: 50vh;
+      }
+      .name--1, .name--2 {
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+      }
+
+      .zagrada {
+        font-size: 1.2rem;
+      }
+
+      .skills {
+        margin-top: 2rem;
+      }
+
+
+      .skillsItems {
+        font-family: Kanit, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: .5rem 1rem;
+        margin:0.1rem;
+        background-color: #bab3ad;
+        border-radius: 5px;
+        color: #000;
+          }
+      .about {
+        margin: 1rem 0 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color:#e2e2e2
+    }
+    .about-figurecaption {
+      font-size: 2rem;
+    }
+    .about-par {
+      flex-basis: 60%;
+      font-size: 1.2rem;
+      width: 90vw;
+    }
+
+    .portfolio {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card {
+      font-size: 1.4rem;
+      font-weight: 300;
+      width: 80vw;
+      height: 30vh;
+      margin: 1rem;
+    }
+
+    .contact {
+      margin-top: 3rem;
+    }
+
+    .contact-list {
+      position: relative;
+      top: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+      height: 80vh;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+  }

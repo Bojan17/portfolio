@@ -5,25 +5,14 @@ import React from 'react';
 
     <section className="home" id="home">
       <div className="name name--1">
-        <span>B</span>
-        <span>O</span>
-        <span>J</span>
-        <span>A</span>
-        <span>N</span>
+        <h2>BOJAN</h2>
       </div>
       <div className="name name--2">
-        <span>K</span>
-        <span>O</span>
-        <span>V</span>
-        <span>A</span>
-        <span>C</span>
-        <span>E</span>
-        <span>V</span>
-        <span>I</span>
-        <span>C</span>
+        <h2>KOVACEVIC</h2>
       </div>
-      <h3 style={{'fontSize': '2rem', 'fontFamily': 'Kanit', 'fontWeight': '300', 'color': '#bab3ad'}}>( I enjoy coding, and learning! My favorites are: React.js and Python )</h3>
+      <h3 className="zagrada">( I enjoy coding, and learning! My favorites are: React.js and Python )</h3>
     </section>
+
     <div className="skills">
       <h4 className="skillsItems">JavaScript</h4>
       <h4 className="skillsItems">jQuery</h4>
