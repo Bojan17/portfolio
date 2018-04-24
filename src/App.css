@@ -111,16 +111,26 @@
 
 .about {
   margin: 3rem 0 3rem 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: flex-start;
   color:#e2e2e2
 }
 
 .about-figurecaption {
   font-size: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
 }
-.about-img {}
+.about-img {
+  height: 20vh;
+  widht: 20vw;
+  border-radius: 50%;
+}
 
 .about-par {
   flex-basis: 60%;
@@ -269,7 +279,9 @@
     }
     .about-figurecaption {
       font-size: 2rem;
+      text-align: center;
     }
+
     .about-par {
       flex-basis: 60%;
       font-size: 1.2rem;
@@ -307,3 +319,64 @@
     }
 
   }
+
+
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .header-list {
+      width: 100vw;
+      font-size: 3rem;
+      justify-content: space-between;
+    }
+
+    .home-wrapper {
+      width: 100vw;
+    }
+    .home {
+      margin-top: 5rem;
+      margin-left: 10px;
+      width: 100vw;
+      height: 50vh;
+    }
+    .name--1, .name--2 {
+      font-size: 6rem;
+      letter-spacing: 0.2rem;
+    }
+
+    .zagrada {
+      font-size: 2.5rem;
+    }
+
+    .skills {
+      margin-top: 2rem;
+    }
+
+
+    .skillsItems {
+      font-family: Kanit, sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+      padding: .5rem 1rem;
+      margin:0.1rem;
+      background-color: #bab3ad;
+      border-radius: 5px;
+      color: #000;
+        }
+
+    .portfolio {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+    .card {
+        font-size: 3rem;
+        font-weight: 300;
+        width: 60vw;
+        height: 30vh;
+        margin: 1rem;
+        }
+}
