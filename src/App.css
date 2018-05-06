@@ -1,15 +1,25 @@
+.switch-wrapper {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .header-list {
   list-style-type: none;
-  font-size: 3rem;
+  font-size: 1.2rem;
   display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  justify-content: flex-end;
+  width: 100vw;
+  justify-content: space-around;
 
 }
 .header-listItem {
-  margin: 1rem;
+  margin: 0;
   /*border-bottom: 3px solid #bab3ad;*/
   color: #bab3ad;
 
@@ -32,7 +42,7 @@
 }
 
 
-/* Switch animation*/
+/* Switch animation
 .switch-wrapper {
   position: relative;
   width: 100%;
@@ -40,7 +50,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-}
+} */
 
 .switch-wrapper > div {
   position: absolute;
@@ -55,18 +65,20 @@
 .home-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 
 }
 .home {
-  margin-top: 5rem;
-  margin-left: 1rem;
-  width: 100%;
-  height: 80%;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  width: 100vw;
+  height: 40vh;
+  margin-bottom: 1rem;
 }
 
 .name {
   font-family: Kanit, sans-serif;
+  z-index: 110000;
 }
 
 .name--1 {
@@ -74,15 +86,17 @@
 }
 
 .name--1, .name--2 {
-  font-size: 8rem;
-  letter-spacing: 1rem;
+  font-size: 3rem;
+  letter-spacing: 2px;
   background-image: linear-gradient(to right bottom, #f4bc8b,#ef770e );
+  -webkit-background-image: linear-gradient(to right bottom, #f4bc8b,#ef770e );
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .zagrada {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  width: 80vw;
   font-family: Kanit, sans-serif;
   font-weight: 300;
   color: #bab3ad;
@@ -90,18 +104,20 @@
 
 
 .skills {
-  margin-top: 30rem;
+  margin-top: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  width: 95vw;
 }
 
 .skillsItems {
   font-family: Kanit, sans-serif;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 400;
+  margin: 3px;
   background-color: #bab3ad;
   padding: .5rem 1rem;
   border-radius: 5px;
@@ -110,20 +126,22 @@
 
 
 .about {
-  margin: 3rem 0 3rem 0;
+  margin: 0.5rem 0 0.5rem 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  color:#e2e2e2
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color:#e2e2e2;
+  height: 80vh;
 }
 
 .about-figurecaption {
-  font-size: 7rem;
+  font-size: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  text-align: center;
 
 }
 .about-img {
@@ -134,32 +152,38 @@
 
 .about-par {
   flex-basis: 60%;
-  font-size: 3rem;
+  font-size: 1.4rem;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 
 .portfolio {
-  margin-top: 20rem;
+  width: 100vw;
+  margin-top: 1rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
   .card {
     background-image: radial-gradient(circle at center, white, #afafae);
     /*opacity: 0.5;*/
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    width: 13vw;
+    width: 75vw;
     height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     border: 1px solid #d3cdcd;
-    box-shadow: 0 2rem 3rem rgba(117, 116, 116, .2);
+    box-shadow: 0 2px 1px rgba(117, 116, 116, .2);
   }
+  .card:not(:last-of-type) {
+    margin-bottom: 5px;
+}
   .github-wrapper {
     display: flex;
     flex-direction: column;
@@ -171,7 +195,7 @@
 
 
 .contact {
-  margin-top: 30rem;
+  margin-top: 2rem;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -184,7 +208,8 @@
   list-style-type: none;
   display: flex;
   width: 80%;
-  flex-direction: row;
+  height: 80vh;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -212,11 +237,179 @@
   border: 1px solid lightblue;
 }
 
+@media only screen and (min-width: 920px) {
+  .portfolio {
+    width: 100vw;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    /*opacity: 0.5;*/
+    width: 40vw;
+    height: 30vh;
+    border: 1px solid #d3cdcd;
+    box-shadow: 0 10px 7px rgba(117, 116, 116, .2);
+  }
+  .card:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+}
 
-  @media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 568px)
-    and (max-device-width: 667px)
+@media only screen and (min-width: 1160px) {
+  .header-list {
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+  .header-listItem {
+    margin: 1rem;
+  }
+
+  .home {
+    margin-bottom: 3rem;
+  }
+  .about {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .about-figure {
+    height: 100%;
+  }
+  .about-figurecaption {
+    align-self: flex-start;
+  }
+
+  .card {
+    /*opacity: 0.5;*/
+    width: 25vw;
+    height: 40vh;
+    border: 1px solid #d3cdcd;
+    box-shadow: 0 10px 7px rgba(117, 116, 116, .2);
+    margin: 1rem;
+    font-size: 1rem;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .name--1, .name--2 {
+    font-size: 3.5rem;
+  }
+  .about {
+  margin: 1rem 0 1rem 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  color:#e2e2e2
+}
+
+.about-figurecaption {
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.about-img {
+  height: 25vh;
+  widht: 25vw;
+  border-radius: 50%;
+}
+
+.about-par {
+  flex-basis: 60%;
+  font-size: 2rem;
+}
+.portfolio {
+  margin-top: 15rem;
+}
+
+.card {
+  width: 13vw;
+  height: 30vh;
+}
+}
+
+
+/*
+@media screen
+and (min-device-width: 76.8rem)
+and (max-device-width: 102.4rem)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+  .header-list {
+    width: 100vw;
+    font-size: 3rem;
+    justify-content: space-between;
+  }
+
+  .home-wrapper {
+    width: 100vw;
+  }
+  .home {
+    margin-top: 5rem;
+    margin-left: 10px;
+    width: 100vw;
+    height: 50vh;
+  }
+  .name--1, .name--2 {
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .zagrada {
+    font-size: 2.5rem;
+  }
+
+  .skills {
+    margin-top: 2rem;
+  }
+
+
+  .skillsItems {
+    font-family: Kanit, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: .5rem 1rem;
+    margin:0.1rem;
+    background-color: #bab3ad;
+    border-radius: 5px;
+    color: #000;
+      }
+
+  .portfolio {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      }
+  .card {
+      flex:1;
+      font-size: 3rem;
+      font-weight: 300;
+      width: 60vw;
+      height: 30vh;
+      margin: 1rem;
+      }
+}
+
+
+
+  @media screen
+    and (min-device-width: 32rem)
+    and (max-device-width: 56.8rem)
+    and (max-device-width: 66.7rem)
     and (-webkit-min-device-pixel-ratio: 2) {
       body {
         width: 100vw;
@@ -319,64 +512,4 @@
     }
 
   }
-
-
-  @media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-    .header-list {
-      width: 100vw;
-      font-size: 3rem;
-      justify-content: space-between;
-    }
-
-    .home-wrapper {
-      width: 100vw;
-    }
-    .home {
-      margin-top: 5rem;
-      margin-left: 10px;
-      width: 100vw;
-      height: 50vh;
-    }
-    .name--1, .name--2 {
-      font-size: 6rem;
-      letter-spacing: 0.2rem;
-    }
-
-    .zagrada {
-      font-size: 2.5rem;
-    }
-
-    .skills {
-      margin-top: 2rem;
-    }
-
-
-    .skillsItems {
-      font-family: Kanit, sans-serif;
-      font-size: 2rem;
-      font-weight: 400;
-      padding: .5rem 1rem;
-      margin:0.1rem;
-      background-color: #bab3ad;
-      border-radius: 5px;
-      color: #000;
-        }
-
-    .portfolio {
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        }
-    .card {
-        font-size: 3rem;
-        font-weight: 300;
-        width: 60vw;
-        height: 30vh;
-        margin: 1rem;
-        }
-}
+*/

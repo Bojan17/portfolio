@@ -11,8 +11,8 @@ import React from 'react';
         alt="An awesome picture" />
       </figure>
       <p className="about-par">
-        I'm self taught developer, or at least I believe I'm one.
-        I enjoy learning and building apps. My primary focus was on JS and
+        I'm self-taught developer, or at least I believe I'm one.
+        I enjoy learning and building apps. My primary focus at begining was on JS and
         along with it I learned Node.js, React.js, ReactNative etc.
         I'm also getting better every day with Python, SQL, and MySQL.
         End goal is to become so knowledgeable one day that I can teach software engineering.

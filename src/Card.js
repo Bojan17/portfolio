@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({github, link, name}) => {
+const Card = ({github, link, name,tech}) => {
   return (
     <div className="card">
       <div className="github-wrapper">
@@ -8,7 +8,7 @@ const Card = ({github, link, name}) => {
         <a href={github} target="blank" style={{'fontFamily': 'Kanit', 'color': '#1b1b1b'}}>Github repository</a>
       </div>
       <h4 style={{'fontFamily': 'Kanit', 'fontWeight': '400', 'color': '#1b1b1b'}}>{name}</h4>
-      <a href={link} target="blank" style={{'fontFamily': 'Kanit', 'color': '#1b1b1b'}}>Visit page</a>
+      <a href={link} target="blank" style={{'fontFamily': 'Kanit', 'color': '#1b1b1b'}}>{tech}</a>
     </div>
   );
 }

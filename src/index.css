@@ -15,4 +15,30 @@ body{
   background-color: #1B1B1B;
   box-sizing: border-box;
   font-family: Kanit, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 82.5%;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
 }
